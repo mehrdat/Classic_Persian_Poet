@@ -1,4 +1,4 @@
-##**Persian Classic Poet Generator GPT**
+**##Persian Classic Poet Generator GPT**
 This is a tiny model to generate Persian classic poet, and the model adapted from "nanoGPT" by Andrej Karpathy.
 
 The model i did on CPU and i will run on GPU and will put better results. I did not change the model so much,

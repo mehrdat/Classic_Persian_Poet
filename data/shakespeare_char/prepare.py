@@ -16,13 +16,15 @@ import numpy as np
 #     with open(input_file_path, 'w') as f:
 #         f.write(requests.get(data_url).text)
 
-input_file_path = '/Users/Mehr/Desktop/Python/excercise/august/poet/input.txt'
+input_file_path = '/content/Classic_Persian_Poet/input.txt'
 with open(input_file_path, 'r') as f:
     data = f.read()
 print(f"length of dataset in characters: {len(data):,}")
 
 # get all the unique characters that occur in this text
 chars = sorted(list(set(data)))
+if '\n' not in chars:
+    chars.append('\n')  # add newline if not already present
 vocab_size = len(chars)
 print("all the unique characters:", ''.join(chars))
 print(f"vocab size: {vocab_size:,}")
